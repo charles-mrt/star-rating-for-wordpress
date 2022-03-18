@@ -6,9 +6,9 @@
  * Parms to be used.
  * total_stars = integer maximum 5 ex: total_stars="5"
  * rated_stars = integer maximum 5 ex: rated_stars="5"
- * color_rated_stars = string ex: orange
- * alignment = string ex: center
- * font-size = string ex: 16px
+ * color_rated_stars = string ex: "orange"
+ * alignment = string ex: "center"
+ * font-size = string ex: "16px"
  
  Shortcode ex:
  * [star_rate total_stars="5" rated_stars="3"  alignment="center" font-size="22px" ]
@@ -48,7 +48,7 @@ function addStarRating ( $attr ) {
                         color:' . $color_rated_stars . '"
                       >
                     </span>';                 
-        };
+        }
     }
 
     $output.= '</div>';
